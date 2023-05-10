@@ -1,0 +1,424 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MJ Batatas Gourmet</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Pacifico&family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.4/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="./build/styles/main.css">
+    </head>
+</head>
+<body>                                 <!--Sticky-top para que o header acompanhe a pagina durante a rolagem -->
+    <header class="navbar navbar-expand-lg sticky-top p-4" id="cabecalho">
+        <div class="container">
+            <h1 class="titulo-font m-0 navbar-brand">MJ Batatas Gourmet</h1>
+            <button class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#menu-navegacao">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <nav class="navbar-collapse collapse justify-content-end" id="menu-navegacao">
+                <ul class="nav nav-pills d-block d-md-flex">
+                    <!-- d-block é display block mas é geral // com o d-md-flex o display a partir do tamanho medio o display será flex -->
+                    <li class="nav-item fw-bold">
+                        <a href="#sobre" class="nav-link active">
+                            <i class="bi bi-house-door me-1"></i>
+                            Sobre a MJ Batatas</a>
+                    </li>
+                    <li class="nav-item fw-bold">
+                        <a href="#eventos" class="nav-link">                            
+                            <i class="bi bi-calendar-check me-1"></i>
+                            Eventoes</a>
+                    </li>
+                    <li class="nav-item fw-bold">
+                        <a href="#cardapio" class="nav-link">
+                            <i class="bi bi-card-text me-1"></i>
+                            Nosso Cardápio</a>
+                    </li>
+                    <li class="nav-item fw-bold">
+                        <a href="#contato" class="nav-link">
+                            <i class="bi bi-chat-left-text me-1"></i>
+                            Faça seu Pedido</a>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    <div data-bs-spy="scroll" data-bs-target="cabecalho" data-bs-smooth-scroll="true">
+    <section id="sobre">
+        <div class="carousel slide" data-bs-ride="carousel" id="carousel">
+            <div class="carousel-inner">                
+                <div class="carousel-item active" data-bs-interval="3000">
+                    <img class="w-100 height-slide" src="./build/imagens/requeijaobacon.jpg" alt="Batata Recheada Requeijão com Bacon">
+                    <div class="carousel-caption d-none d-md-block">
+                        <h4 class="font-color-black">Batata de Bacon com Requeijão</h4>
+                        <p class="font-color-black h5">Batata, Bacon frito, Catupiry da marca Catupiry, manteiga e nada mais.</p>
+                        <img src="./build/imagens/catupiry-1024.webp" alt="">
+                    </div>
+                </div>
+                <div class="carousel-item" data-bs-interval="3000">
+                    <img class="w-100 height-slide" src="./build/imagens/batatarecheada.jpg" alt="Batata Recheada Catupiry">
+                </div>
+                <div class="carousel-item" data-bs-interval="3000">
+                    <img class="w-100 height-slide" src="./build/imagens/panela.jpg" alt="Panela Strogonoff">
+                </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carousel" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon"></span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carousel" data-bs-slide="next">
+                <span class="carousel-control-next-icon"></span>
+            </button>   
+            <div class="carousel-indicators">
+                <button type="button" data-bs-target="#carousel" data-bs-slide-to="0" class="active"></button>
+                <button type="button" data-bs-target="#carousel" data-bs-slide-to="1"></button>
+                <button type="button" data-bs-target="#carousel" data-bs-slide-to="2"></button>
+            </div>
+        </div>
+        <div class="pt-5 pb-5">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-5">
+                        <img src="./build/imagens/restaurante.jpg" class="d-block w-100 rounded" alt="Foto do salão do restaurante">
+                    </div>
+                    <div class="col-md-7 mt-3 mt-md-0">
+                        <h2 class="titulo-font">Sobre a <span class="font-color"> MJ Batata Gourmet</span></h2>
+                        <p>
+                            A idéia oferecer um produto de qualidade, caseiro e que sustente. Qualidade para que quem experimente queira pedir novamente, queira conhecer outros recheios. Caseiro porque é feito em casa claro, mais a idéia é o lembrar o tempero de mamãe. Que Sustente pois pedir uma refeição e ficar com fome não dá. 
+                        </p>
+                        <h3 class="titulo-font">Sobre o <span class="font-color"> nome</span></h3>
+                        <p>
+                            <span class="font-color">MJ Batatas Gourmet,</span> Surgiu após a maternidade. Virei mãe e já no início da licença maternidade procurei algo para que eu pudesse ficar mais tempo com a <span class="font-color">M</span>aria <span class="font-color">J</span>úlia. Foi assim nasceu a <span class="font-color">MJ</span> Batatas Gourmet, e quanto mais eu conseguir ficar com minha filha, mais estarei contribuindo para o desenvolvimento dela.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section id="eventos">
+        <div class="pt-5 pb-5">
+            <div class="container">
+                <div class="row">
+                    <h2 class="titulo-font text-center">Para todas <span class="font-color">as ocasiões</span></h2>
+                </div>
+                <div class="row mt-4">
+                    <div class="col-md-4">
+                        <img src="./build/imagens/aniversario.jpg" class="d-block w-100 rounded mb-2" alt="">
+                        <h3 class="titulo-font pt-3 font-color fs-4">                        
+                            <i class="bi bi-calendar-heart-fill"></i>
+                            Aniversário</h3>
+                        <p>
+                            <span class="font-color">Kit Festa 01</span> Bolo de chocolate de 2 quilos, com cobertura de chocolate e granulado de chocolate, 100 Brigadeiros de qualidade (caseiros) e 100 Beijinhos de qualidade (caseiros também).
+                        </p>
+                        <div class="badge bg-danger text-wrap" style="width: 10rem;">
+                            Solicitar com no mínimo 24 horas de antecedência.  
+                        </div>
+                        <p></p>
+                        <p>
+                            <span class="font-color fw-bold">R$ 199,00</span>
+                        </p>
+                    </div>
+                    <div class="col-md-4">
+                        <img src="./build/imagens/confraternizacoes.jpg" class="d-block w-100 rounded mb-2" alt="Confraternizacao">
+                        <h3 class="titulo-font pt-3 font-color fs-4">
+                            <i class="bi bi-people-fill"></i>
+                            Confraternização</h3>
+                        <p>
+                            50 deliciosos Croquetes de Linguiça Apimentada ou sem pimenta, 8 latas de Cerveja Original geladinha, 200 gramas de Salame Sadia e 200 gramas de Queijo Prato tempado para petiscar.
+                        </p>
+                        <div class="badge bg-danger text-wrap" style="width: 10rem;">
+                            Solicitar com no mínimo 36 horas de antecedência.  
+                        </div>
+                        <p> </p> 
+                        <p>
+                            <span class="font-color fw-bold">R$ 249,00</span>
+                        </p>
+                    </div><div class="col-md-4">
+                        <img src="./build/imagens/casamento.jpg" class="d-block w-100 rounded mb-2" alt="Eventos Especiáis">
+                        <h3 class="titulo-font pt-3 font-color fs-4">
+                            <i class="bi bi-arrow-through-heart-fill"></i>
+                            Eventos Especiáis</h3>
+                        <p>
+                            O Kit Festa 01 mais o combo da Confraternização. 
+                        </p>
+                        <div class="badge bg-danger text-wrap" style="width: 10rem;">
+                            Solicitar com no mínimo 36 horas de antecedência.  
+                        </div>
+                        <p></p> 
+                        <p>
+                            <span class="font-color fw-bold">R$ 419,00</span>
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section id="cardapio">
+    <div class="pt-5 pb-5">
+        <div class="container">
+            <div class="row">
+                <h2 class="titulo-font text-center mb-4">Nosso <span class="font-color">cardápio</span></h2>
+            </div>            
+        <div class="row">
+            <div class="col-md-2">
+                <nav class="nav nav-pills flex-column nav-cardapio">
+                    <button type="button" data-bs-toggle="tab" data-bs-target="#bebidas" class="fw-bold text-start nav-link font-color active">Bebidas</button>
+                    <button type="button" data-bs-toggle="tab" data-bs-target="#batatas" class="fw-bold text-start nav-link font-color">Batatas</button>
+                    <button type="button" data-bs-toggle="tab" data-bs-target="#sobremesas" class="fw-bold text-start nav-link font-color">Sobremesas</button>
+                </nav>    
+            </div>
+            <div class="col-md-10">
+                <div class="tab-content">
+                    <div class="tab-pane active" id="bebidas">
+                        <div class="row"> 
+                            <div class="col-md-3 mt-4">
+                                <div class="card h-100">
+                                    <img class="d-block w-100 mt-2" src="./build/imagens/cocacola_200ml.jpg" alt="Coca Cola 200ml">
+                                    <div class="card-body">
+                                        <h5 class="card-title font-color"> Coca-Cola</h5>
+                                        <p class="card-text">Garrafa de 200 ml</p>
+                                        <p class="m-0"> <span class="font-color fw-bold">R$ 2,50</span></p>                                
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-3 mt-4">
+                                <div class="card h-100">
+                                    <img class="d-block w-100 mt-2" src="./build/imagens/FantaGuarana_200ml.jpg" alt="Fanta Guaraná 200ml">
+                                    <div class="card-body">
+                                        <h5 class="card-title font-color">Fanta Guaraná</h5>
+                                        <p class="card-text">Garrafa de 200 ml</p>
+                                        <p class="m-0"> <span class="font-color fw-bold">R$ 2,50</span></p>                                
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-3 mt-4">
+                                <div class="card h-100">
+                                    <img class="d-block w-100 mt-2" src="./build/imagens/FantaLaranja_200ml.jpg" alt="Fanta Laranja 200ml">
+                                    <div class="card-body">
+                                        <h5 class="card-title font-color">Fanta Laranja</h5>
+                                        <p class="card-text">Garrafa de 200 ml</p>
+                                        <p class="m-0"> <span class="font-color fw-bold">R$ 2,50</span></p>                                
+                                    </div>
+                                </div> 
+                            </div>                            
+                        </div>
+                    </div>                
+                    <div class="tab-pane" id="batatas">
+                        <div class="row">
+                            <div class="col-md-3 mt-2">
+                                <div class="card h-100">
+                                    <img class="d-block w-100" src="./build/imagens/frangoCatupiry.png" alt="Batata Frango Catupiry">
+                                    <div class="card-body">
+                                        <h5 class="card-title font-color">Frango Catupiry</h5>
+                                        <p class="card-text"> Tradicional <span class="font-color fw-bold">R$ 23,00</span></p>
+                                        <p class="card-text"> Com Chedder <span class="font-color fw-bold">R$ 25,00</span></p>
+                                    </div>
+                                    <div class="card-footer">
+                                        <small class="text-body-secondary ilustra">Imagens meramente ilustrativas</small>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-3 mt-2">
+                                <div class="card h-100">
+                                    <img class="d-block w-100" src="./build/imagens/calabresa.png" alt="Batata Calabrasa">
+                                    <div class="card-body">
+                                        <h5 class="card-title font-color">Calabresa</h5>
+                                        <p class="card-text"> Tradicional <span class="font-color fw-bold">R$ 25,00</span></p>
+                                        <p class="card-text"> Com Bacon <span class="font-color fw-bold">R$ 29,00</span></p>
+                                    </div>
+                                    <div class="card-footer">
+                                        <small class="text-body-secondary ilustra">Imagens meramente ilustrativas</small>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-3 mt-2">
+                                <div class="card h-100">
+                                    <img class="d-block w-100" src="./build/imagens/bolonhesa.png" alt="Batata Bolonhesa">
+                                    <div class="card-body">
+                                        <h5 class="card-title font-color">Bolonhesa</h5>
+                                        <p class="card-text"> Tradicional <span class="font-color fw-bold">R$ 25,00</span></p>
+                                        <p class="card-text"> Com Catupiry <span class="font-color fw-bold">R$ 28,00</span></p>
+                                    </div>
+                                    <div class="card-footer">
+                                        <small class="text-body-secondary ilustra">Imagens meramente ilustrativas</small>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-3">
+                                <div class="card h-100">
+                                    <img class="d-block w-100" src="./build/imagens/bolonhesa.png" alt="Batata Brócolis">
+                                    <div class="card-body">
+                                        <h5 class="card-title font-color">Brócolis</h5>
+                                        <p class="card-text"> Tradicional <span class="font-color fw-bold">R$ 26,00</span></p>
+                                        <p class="card-text"> Com Milho <span class="font-color fw-bold">R$ 28,00</span></p>
+                                    </div>
+                                    <div class="card-footer">
+                                        <small class="text-body-secondary ilustra">Imagens meramente ilustrativas</small>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-3 mt-4">
+                                <div class="card h-100">
+                                    <img class="d-block w-100" src="./build/imagens/bacon.jpg" alt="Bacon adcional">
+                                    <div class="card-body">
+                                        <h5 class="card-title font-color">Adicionais</h5>
+                                        <p class="m-0"> Queijo <span class="font-color fw-bold">R$ 5,00</span></p>
+                                        <p class="m-0"> Bacon <span class="font-color fw-bold">R$ 4,00</span></p>
+                                        <p class="m-0"> Azeitonas <span class="font-color fw-bold">R$ 3,00</span></p>
+                                    </div>
+                                    <div class="card-footer">
+                                        <small class="text-body-secondary ilustra">Imagens meramente ilustrativas</small>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-3 mt-4">
+                                <div class="card h-100">
+                                    <img class="d-block w-100" src="./build/imagens/ketchup.jpg" alt="Ketchup adcional">
+                                    <div class="card-body">
+                                        <h5 class="card-title font-color">Adicionais</h5>        
+                                        <p class="m-0"> Chadder <span class="font-color fw-bold">R$ 2,00</span></p>
+                                        <p class="m-0"> Ketchup <span class="font-color fw-bold">R$ 2,00</span></p>
+                                        <p class="m-0"> Milho <span class="font-color fw-bold">R$ 2,00</span></p>
+                                    </div>
+                                    <div class="card-footer">
+                                        <small class="text-body-secondary ilustra">Imagens meramente ilustrativas</small>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-3 mt-4">
+                                <div class="card h-100">
+                                    <img class="d-block w-100" src="./build/imagens/catupiry-1024.webp" alt="Ketchup adcional">
+                                    <div class="card-body">
+                                        <h5 class="card-title font-color">Adicionais</h5>        
+                                        <p class="m-0"> Catupiry <span class="font-color fw-bold">R$ 3,00</span></p>
+                                        <p class="m-0"> Barbecue <span class="font-color fw-bold">R$ 2,00</span></p>
+                                    </div>
+                                    <div class="card-footer">
+                                        <small class="text-body-secondary ilustra">Imagens meramente ilustrativas</small>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="tab-pane" id="sobremesas">
+                        <div class="row">
+                            <div class="col-md-3 mt-4">
+                                <div class="card h-100">
+                                    <img class="d-block w-100 mt-2" src="./build/imagens/prestigio.jpg" alt="Prestigio">
+                                    <div class="card-body">
+                                        <h5 class="card-title font-color"> Prestigio</h5>
+                                        <p class="card-text">O delicioso chocolate Nestle, uma sobremesa na medida certa, Esse dá para comer sem culpa.</p>
+                                        <p class="m-0"> <span class="font-color fw-bold">R$ 4,50</span></p>                                
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-3 mt-4">
+                                <div class="card h-100">
+                                    <img class="d-block w-100 mt-2" src="./build/imagens/snickers.jpg" alt="Snickers">
+                                    <div class="card-body">
+                                        <h5 class="card-title font-color"> Snickers</h5>
+                                        <p class="card-text">Este já é o preferido de muitos, Chocolate, Caramelo, Amendoim... Grande como a sua fome.</p>
+                                        <p class="m-0"> <span class="font-color fw-bold">R$ 5,00</span></p>                                
+                                    </div>
+                                </div>
+                            </div>               
+                            <div class="col-md-3 mt-4">
+                                <div class="card h-100">
+                                    <img class="d-block w-100 mt-2" src="./build/imagens/sonhodevalsa.jpg" alt="Sonho de Valsa">
+                                    <div class="card-body">
+                                        <h5 class="card-title font-color"> Sonho de Valsa</h5>
+                                        <p class="card-text">O bom mais gostoso do Brasil. Esse agrada a todos, bom para comer, bom para fazer surpresa.</p>
+                                        <p class="m-0"> <span class="font-color fw-bold">R$ 3,00</span></p>                                
+                                    </div>
+                                </div>                            
+                            </div>                                                        
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    </section>
+    <section id="contato" class="pt-5 pb-5">
+        <div class="container">
+            <div class="row">
+                <h2 class="text-center titulo-font">Faça seu <span class="font-color"> Pedido</span></h2>
+            </div>
+            <div class="row">
+                <div class="col-md-6 mb-5">
+                    <ul class="redessociais"><li class="fs-4">
+                        <a href="https://api.whatsapp.com/send?phone=5511964655065" class="font-color">
+                            <i class="bi bi-whatsapp"></i> (11) 96465-5065</a>
+                    </li>
+                    <li>Pedidos apenas por mensagens no Whatsapp.</li></ul>
+                    <form class="no-form"> <!-- largura do input do form-control é form-control-md por padrão com 
+                                a classe form-control-sm mais estreito e form-control-lg mais largo -->
+                        <div class="mb-3 ">
+                            <label for="nome" class="form-label fw-bold font-color">Seu nome</label>
+                            <input type="text" id="nome" name="nome" class="form-control" required>
+                        </div>
+                        <div class="mb-3 ">    
+                            <label for="email" class="form-label fw-bold font-color">Seu e-mail</label>
+                            <input type="email" id="email" name="email" class="form-control" required>
+                        </div>
+                        <div class="mb-3 ">
+                            <label for="telefone" class="form-label fw-bold font-color">Seu meu telefone</label>
+                            <input type="tel" id="telefone" name="telefone" class="form-control" required>
+                        </div>
+                        <div class="mb-3 ">   
+                            <label for="mensagem" class="form-label fw-bold font-color">Sua mensagem</label>
+                            <textarea  class="form-control" id="mensagem"></textarea>
+                        </div>
+                            <button type="submit" class="btn fw-bold">Enviar</button>                        
+                    </form>
+                </div>
+                <div class="col-md-5">
+                    <div class="row">
+                        <h3 class="titulo-font fs-4 font-color">
+                            <i class="bi bi-hand-thumbs-up-fill"></i>
+                            Redes Sociais</h3>
+                    </div>
+                    <div class="row">                            
+                            <ul class="redessociais">
+                            <!--<li class="fs-4">
+                                <a href="https://www.facebook.com/1900pizzeria" class="font-color">
+                                    <i class="bi bi-facebook"></i> /facebook/mjbatatas
+                                </a>
+                            </li>-->
+                            <li class="fs-4">                                
+                                <a href="https://www.instagram.com/mjbatatasgourmet/" class="font-color">
+                                    <i class="bi bi-instagram"></i> /mjbatatas
+                                </a>
+                            </li>
+                            <li class="fs-4 ms-1 me-1">
+                                
+                            </li>
+                        </ul>                        
+                    </div>
+                    <div class="row mt-4">
+                        <h3 class="titulo-font fs-4 font-color">
+                            <i class="bi bi-cursor-fill"></i>
+                            Endereço</h3>
+                        <p>
+                            Condomínio da Dara Ap 01 Torre 02.
+                        </p>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </section>
+    <footer>
+        <div class="conteiner">
+            <p class="navbar rodape">                                                       
+                &copy; Henrique Schneider - Todos os direitos reservados - 2023 <br><strong>Tenha um site você também - Contato  <a href="https://api.whatsapp.com/send?phone=5511974094438" class="telHenrique"> <i class="bi bi-whatsapp"></i> (11) 97409-4438</a></strong>
+            </p>
+        </div>
+    </footer>
+    </div>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

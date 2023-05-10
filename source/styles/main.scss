@@ -1,0 +1,136 @@
+@use './variaveis';
+
+body {
+    font-family: Roboto, sans-serif;
+}
+
+.navbar {
+    background-color: variaveis.$corPrincipal;
+}
+
+#cabecalho .nav .nav-link.active {
+    background-color: variaveis.$corBranca;
+    color: variaveis.$corPrincipal;
+}
+
+.navbar-brand {
+    font-family: Pacifico, cursive; 
+    font-size: 26px;    
+    color: variaveis.$corBranca;
+}
+
+#cabecalho .nav .nav-link,
+.navbar-brand:hover,
+.nav-cardapio .nav-link.active:hover  {
+    color: variaveis.$corBranca;
+}
+
+.telHenrique {
+    color: variaveis.$corBranca;
+    list-style: none;
+    text-decoration: none;
+    }
+
+.titulo-font {
+    font-family: Pacifico, cursive; 
+    font-size: 22px;
+}
+
+.font-color {
+    color: variaveis.$corPrincipal;
+}
+
+.font-color-black {
+    color: #0b0b0b;
+}
+
+.navbar-toggler{
+    background-color: variaveis.$corSecundaria;
+}
+
+#sobre,
+#cardapio  {
+    background-color: variaveis.$corSecundaria;
+}
+
+.nav-cardapio .nav-link.active,
+#contato button {
+    background-color: variaveis.$corPrincipal;
+    color: variaveis.$corBranca;
+}
+
+.rodape {
+    color: variaveis.$corBranca;
+    padding: 12px;
+    font-size: 18px;
+}
+
+.ilustra {
+    font-size: 12px;
+}
+
+.no-form{
+    display: none;
+}
+
+.nav-cardapio .nav-link:hover {
+    color: variaveis.$corPrincipal;
+}
+
+.height-slide {
+    height: 650px;
+}
+
+.redessociais li {
+    list-style: none;
+    display: block;
+}
+
+.redessociais a {
+    text-decoration: none;
+}
+
+.col-md-3 img {
+    height: 165px;
+    width: 165px;
+}
+
+.carousel-item > img {
+    height: 405px;
+}
+
+@media screen and (max-width: 767px) {
+    .carousel-item img {
+        height: 220px;
+    }
+}
+
+@media screen and (min-width: 501px) and (max-width:1023px) {
+    .col-md-3 {
+        flex: 0 0 auto;
+        width: 50%;    
+    }
+    .col-md-3 > img {
+        padding-top: 15px;
+        padding-left: 25px;
+    }
+    .rodape {
+        padding: 8px;
+        font-size: 15px;
+    }
+}
+
+@media screen and (max-width: 500px) {
+    .col-md-3 {
+    flex: 0 0 auto;
+    width: 100%;
+    }
+    
+    .col-md-3 > img {        
+        padding-top: 10px;
+    }   
+    .rodape {
+        padding: 5px;
+        font-size: 13px;
+    }
+}
